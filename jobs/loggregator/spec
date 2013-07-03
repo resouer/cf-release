@@ -1,0 +1,8 @@
+---
+name: loggregator
+templates:
+  loggregator_ctl.erb: bin/loggregator_ctl
+
+packages:
+- common
+- loggregator

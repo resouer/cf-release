@@ -1,0 +1,36 @@
+#!/bin/bash -e
+
+RUN_DIR=/var/vcap/sys/run/loggregator
+LOG_DIR=/var/vcap/sys/log/loggregator
+PIDFILE=$RUN_DIR/loggregator.pid
+
+source /var/vcap/packages/common/utils.sh
+
+case $1 in
+
+  start)
+    pid_guard $PIDFILE "Loggregator"
+
+    mkdir -p $RUN_DIR
+    mkdir -p $LOG_DIR
+
+    chown vcap:vcap $LOG_DIR
+    
+    echo $$ > $PIDFILE
+   
+    exec chpst -u vcap:vcap /var/vcap/packages/loggregator/loggregator \
+         >>$LOG_DIR/loggregator.stdout.log \
+         2>>$LOG_DIR/loggregator.stderr.log
+    ;;
+
+  stop)
+    kill_and_wait $PIDFILE 40
+
+    ;;
+
+  *)
+    echo "Usage: loggregator {start|stop}"
+
+    ;;
+
+esac
