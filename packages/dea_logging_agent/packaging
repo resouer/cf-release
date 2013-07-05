@@ -2,7 +2,7 @@
 set -e
 
 if [[ `uname -a` =~ "x86_64" ]] ; then
-  dir="dea_logging_agent"
+  dir="loggregator"
   archive=$dir/"deaagent.gz"
   echo "Using 64-bit version"
 else
