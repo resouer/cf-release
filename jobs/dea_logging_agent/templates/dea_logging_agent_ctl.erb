@@ -16,7 +16,7 @@ case $1 in
     
     echo $$ > $PIDFILE
    
-    exec /var/vcap/packages/dea_logging_agent/deaagent --server <%= p("loggregator") %>\
+    exec chpst -u vcap:vcap /var/vcap/packages/dea_logging_agent/deaagent --server <%= p("loggregator") %>\
          >>$LOG_DIR/dea_logging_agent.stdout.log \
          2>>$LOG_DIR/dea_logging_agent.stderr.log
 
