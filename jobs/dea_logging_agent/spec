@@ -6,7 +6,3 @@ templates:
 packages:
 - common
 - dea_logging_agent
-
-properties:
-  loggregator:
-    description: Loggregator server in HOST:PORT format
