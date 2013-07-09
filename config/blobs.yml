@@ -500,12 +500,12 @@ buildpack_cache/auto-reconfiguration-0.6.8.jar:
     MjY4MjYwMDM5YzZmMjU4N2M1Y2M0M2MyYjU3M2VlODhiNGRiZWMwYw==
   size: 709165
 loggregator/deaagent.gz:
-  object_id: 1ca7c742-0439-406c-b064-9527067380c3
+  object_id: de94197a-94a0-44f5-a308-5d48e79f2f83
   sha: !binary |-
-    NzU1YmQ5YmMxZjJkOTc5NDYwYmJhM2Q1NGM4ZDIzOTE0NWMxYzQwOA==
-  size: 853947
+    NjM5MmNkMzI2NmI1OGM5ZTM0NDVmODc1YjI4YjliN2VmYjNlYWMxOA==
+  size: 854753
 loggregator/loggregator.gz:
-  object_id: 5ec4ab67-7001-4cc4-9104-f181d2fb52ca
+  object_id: e8293458-bf47-415b-b0d4-ef27b7c70627
   sha: !binary |-
-    NDdjNTRmOWFlOGU4NjYwY2QzMzI4OTM5MTA4ZWI3YmU2MThkMWY3Yg==
-  size: 1467009
+    MTkxNTM0NmFmYjliMmQxZmU1MmUzYzFmODMwNWFkMTE3YjY5OGJiNg==
+  size: 1468259
